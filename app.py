@@ -35,5 +35,6 @@ def fetch_image(url):
     except Exception as e:
         st.error(f"Error fetching the image: {e}")
     return None
+    
 if __name__ == "__main__":
     main()
