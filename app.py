@@ -38,11 +38,11 @@ def main():
     # Define the list of video links and descriptions
     video_data = [
         {
-            "url": "https://youtube.com/shorts/3MZHcmfJTqE?feature=share",
+            "url": "https://youtube.com/shorts/3MZHcmfJTqE",
             "description": "Mishaal Tamer"
         },
         {
-            "url": "https://youtube.com/shorts/kCYew_fPfnc?feature=share",
+            "url": "https://youtube.com/shorts/kCYew_fPfnc",
             "description": "Tom Gregory - Never Let me Down"
         },
         # Add more videos with their URLs and descriptions here
