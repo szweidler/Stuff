@@ -21,7 +21,7 @@ def main():
     
     # Fetch the image from GitHub
     # "https://github.com/szweidler/Stuff/blob/main/photos/TitlePic.jpg"
-    image_url = "https://github.com/szweidler/Stuff/blob/main/photos/TitlePic.jpg"#"https://raw.githubusercontent.com/szweidler/Stuff/photos/TitlePic.jpg"
+    image_url = "https://raw.githubusercontent.com/szweidler/Stuff/blob/main/photos/TitlePic.jpg"
     st.image(image_url, caption="Sample Image", use_column_width=True)
     
     # image = fetch_image(image_url)
