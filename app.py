@@ -20,7 +20,8 @@ def main():
     st.markdown(f"<h2 style='color:{subtitle_color}; text-align:center;'>{subtitle}</h2>", unsafe_allow_html=True)
     
     # Fetch the image from GitHub
-    image_url = "https://raw.githubusercontent.com/szweidler/Stuff/photos/TitlePic.jpg"
+    # "https://github.com/szweidler/Stuff/blob/main/photos/TitlePic.jpg"
+    image_url = "https://github.com/szweidler/Stuff/blob/main/photos/TitlePic.jpg"#"https://raw.githubusercontent.com/szweidler/Stuff/photos/TitlePic.jpg"
     # st.image(image_url, caption="Sample Image", use_column_width=True)
     
     image = fetch_image(image_url)
