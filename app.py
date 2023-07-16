@@ -4,6 +4,8 @@ import requests
 from PIL import Image
 from io import BytesIO
 
+from IPython.display import YouTubeVideo
+
 def main():
     title = "Vielen Herzlichen Dank!"
     subtitle = "Moon&Stars Locarno 23"
@@ -22,23 +24,52 @@ def main():
     # Fetch the image from GitHub
     # in order that the pictures and videos are shown the repository has to be public
     image_url1 = "https://raw.githubusercontent.com/szweidler/Stuff/main/photos/TitlePic.jpg"
-    video_url1 = "https://raw.githubusercontent.com/szweidler/Stuff/main/photos/IMG_1815.MOV"
-    st.image(image_url, caption="One Republic", use_column_width=True)
-    st.st.video(video_url1, caption = "One Republic - song", use_column_width=True)
-    # image = fetch_image(image_url)
-
-    # if image is not None:
-    #     st.image(image, use_column_width=True)
+    # video_url1 = "https://raw.githubusercontent.com/szweidler/Stuff/main/photos/IMG_1815.MOV"
 
 
-# def fetch_image(url):
-#     try:
-#         response = requests.get(url)
-#         if response.status_code == 200:
-#             return Image.open(BytesIO(response.content))
-#     except Exception as e:
-#         st.error(f"Error fetching the image: {e}")
-#     return None
+    st.image(image_url1, caption="One Republic", use_column_width=True)
+    # st.video(video_url1)
+    # st.text("")
+
+
+
+    st.title("List of YouTube Videos")
+
+    # Define the list of video links and descriptions
+    video_data = [
+        {
+            "url": "https://youtube.com/shorts/3MZHcmfJTqE?feature=share",
+            "description": "Mishaal Tamer"
+        },
+        {
+            "url": "https://youtube.com/shorts/kCYew_fPfnc?feature=share",
+            "description": "Tom Gregory - Never Let me Down"
+        },
+        # Add more videos with their URLs and descriptions here
+    ]
+
+    for i, video_info in enumerate(video_data):
+        st.write(f"Video {i + 1}")
+        st.write(f"Description: {video_info['description']}")
+        st.write("YouTube Video:")
+        video_url = video_info['url']
+        video_id = extract_video_id(video_url)
+        YouTubeVideo(video_id)
+
+
+def extract_video_id(video_url):
+    # Extract the video ID from the YouTube URL
+    video_id = None
+    if "youtube.com/watch" in video_url or "youtu.be/" in video_url:
+        if "youtube.com/watch" in video_url:
+            video_id = video_url.split("v=")[1]
+        else:
+            video_id = video_url.split("/")[-1]
+        video_id = video_id.split("&")[0]
+    else:
+        raise ValueError("Invalid YouTube URL")
+    return video_id
+
 
 if __name__ == "__main__":
     main()
