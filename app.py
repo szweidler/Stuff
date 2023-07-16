@@ -22,22 +22,22 @@ def main():
     # Fetch the image from GitHub
     # "https://github.com/szweidler/Stuff/blob/main/photos/TitlePic.jpg"
     image_url = "https://github.com/szweidler/Stuff/blob/main/photos/TitlePic.jpg"#"https://raw.githubusercontent.com/szweidler/Stuff/photos/TitlePic.jpg"
-    # st.image(image_url, caption="Sample Image", use_column_width=True)
+    st.image(image_url, caption="Sample Image", use_column_width=True)
     
-    image = fetch_image(image_url)
+    # image = fetch_image(image_url)
 
-    if image is not None:
-        st.image(image, use_column_width=True)
+    # if image is not None:
+    #     st.image(image, use_column_width=True)
 
 
-def fetch_image(url):
-    try:
-        response = requests.get(url)
-        if response.status_code == 200:
-            return Image.open(BytesIO(response.content))
-    except Exception as e:
-        st.error(f"Error fetching the image: {e}")
-    return None
+# def fetch_image(url):
+#     try:
+#         response = requests.get(url)
+#         if response.status_code == 200:
+#             return Image.open(BytesIO(response.content))
+#     except Exception as e:
+#         st.error(f"Error fetching the image: {e}")
+#     return None
 
 if __name__ == "__main__":
     main()
