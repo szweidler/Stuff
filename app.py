@@ -20,12 +20,11 @@ def main():
     st.markdown(f"<h2 style='color:{subtitle_color}; text-align:center;'>{subtitle}</h2>", unsafe_allow_html=True)
     
     # Fetch the image from GitHub
-    # "https://github.com/szweidler/Stuff/blob/main/photos/TitlePic.jpg"
-    image_url = "https://raw.githubusercontent.com/szweidler/Stuff/main/photos/TitlePic.jpg"
-    # image_url = "https://raw.githubusercontent.com/szweidler/Stuff/main/photos/mns.jpg"
-    # image_url = "https://raw.githubusercontent.com/szweidler/workspaces/Stuff/main/photos/TitlePic.jpg"
-    st.image(image_url, caption="Test", use_column_width=True)
-    
+    # in order that the pictures and videos are shown the repository has to be public
+    image_url1 = "https://raw.githubusercontent.com/szweidler/Stuff/main/photos/TitlePic.jpg"
+    video_url1 = "https://raw.githubusercontent.com/szweidler/Stuff/main/photos/IMG_1815.MOV"
+    st.image(image_url, caption="One Republic", use_column_width=True)
+    st.st.video(video_url1, caption = "One Republic - song", use_column_width=True)
     # image = fetch_image(image_url)
 
     # if image is not None:
