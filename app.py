@@ -9,7 +9,7 @@ def main():
     subtitle = "Moon&Stars23"
     emoji = "&#10024;"
     title_color = "#000000"  # Black color
-    subtitle_color = "#9c72a9"  # Hex color code for #9c72a9
+    subtitle_color = "purple"#9c72a9"  # Hex color code for #9c72a9
 
     # st.title("")
 
@@ -21,8 +21,8 @@ def main():
     
     # Fetch the image from GitHub
     # "https://github.com/szweidler/Stuff/blob/main/photos/TitlePic.jpg"
-    image_url = "https://raw.githubusercontent.com/szweidler/Stuff/main/photos/TitlePic.jpg"
-    # image_url = "https://raw.githubusercontent.com/szweidler/Stuff/main/photos/mns.jpg"
+    # image_url = "https://raw.githubusercontent.com/szweidler/Stuff/main/photos/TitlePic.jpg"
+    image_url = "https://raw.githubusercontent.com/szweidler/Stuff/main/photos/mns.jpg"
     # image_url = "https://raw.githubusercontent.com/szweidler/workspaces/Stuff/main/photos/TitlePic.jpg"
     st.image(image_url, caption="Sample Image", use_column_width=True)
     
