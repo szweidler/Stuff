@@ -5,15 +5,15 @@ from PIL import Image
 from io import BytesIO
 
 def main():
-    title = "Herzlichen Dank!"
-    subtitle = "Moon&Stars23"
+    title = "Vielen Herzlichen Dank!"
+    subtitle = "Moon&Stars Locarno 23"
     emoji = "&#10024;"
     title_color = "#000000"  # Black color
     subtitle_color = "purple"#9c72a9"  # Hex color code for #9c72a9
 
     # st.title("")
 
-    st.markdown(f"<h1 style='color:{title_color}; text-align:center;'>{emoji} {title}</h1>", unsafe_allow_html=True)
+    st.markdown(f"<h1 style='color:{title_color}; text-align:center;'>{emoji} {title} {emoji}</h1>", unsafe_allow_html=True)
 
 
     # st.subheader("Subtitle:")
