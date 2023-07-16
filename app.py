@@ -33,7 +33,7 @@ def main():
     # youtube_url1 = "https://youtube.com/shorts/3MZHcmfJTqE"
 
     # st.write("Mishaal Tamer:\n", youtube_url1)
-    st.markdown("[Mishaal Tamer](https://youtube.com/shorts/3MZHcmfJTqE)")
+    st.markdown("[Mishaal Tamer](https://youtube.com/shorts/3MZHcmfJTqE?feature=share)")
     # st.video(youtube_url1)
 
 
