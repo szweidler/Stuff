@@ -30,13 +30,19 @@ def main():
     st.image(image_url1, caption="One Republic", use_column_width=True)
     # st.video(video_url1)
     # st.text("")
-    youtube_url = "https://youtube.com/shorts/3MZHcmfJTqE"
+    youtube_url1 = "https://youtube.com/shorts/3MZHcmfJTqE"
 
     st.write("YouTube Video:")
-    st.video(youtube_url)
+    st.video(youtube_url1)
 
 
-    st.title("List of YouTube Videos")
+    youtube_url2 =  "https://youtube.com/shorts/kCYew_fPfnc"
+    st.write("Tom Gregory:")
+    st.video(youtube_url2)
+    
+   
+
+    # st.title("List of YouTube Videos")
 
 #     # Define the list of video links and descriptions
 #     video_data = [
