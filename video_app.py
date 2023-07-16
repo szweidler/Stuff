@@ -1,5 +1,6 @@
 import streamlit as st
 from moviepy.editor import VideoFileClip
+import numpy as np
 
 def main():
     st.title("Video App with Streamlit")
