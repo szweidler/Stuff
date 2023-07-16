@@ -8,7 +8,7 @@ from IPython.display import YouTubeVideo
 
 def main():
     title = "Vielen Herzlichen Dank!"
-    subtitle = "Moon&Stars Locarno 23"
+    subtitle = "Moon&Stars Locarno 2023"
     emoji = "&#10024;"
     title_color = "#000000"  # Black color
     subtitle_color = "purple"#9c72a9"  # Hex color code for #9c72a9
