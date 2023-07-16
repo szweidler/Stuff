@@ -30,45 +30,48 @@ def main():
     st.image(image_url1, caption="One Republic", use_column_width=True)
     # st.video(video_url1)
     # st.text("")
+    youtube_url = "https://youtube.com/shorts/3MZHcmfJTqE"
 
+    st.write("YouTube Video:")
+    st.video(youtube_url)
 
 
     st.title("List of YouTube Videos")
 
-    # Define the list of video links and descriptions
-    video_data = [
-        {
-            "url": "https://youtube.com/shorts/3MZHcmfJTqE",
-            "description": "Mishaal Tamer"
-        },
-        {
-            "url": "https://youtube.com/shorts/kCYew_fPfnc",
-            "description": "Tom Gregory - Never Let me Down"
-        },
-        # Add more videos with their URLs and descriptions here
-    ]
+#     # Define the list of video links and descriptions
+#     video_data = [
+#         {
+#             "url": "https://youtube.com/shorts/3MZHcmfJTqE",
+#             "description": "Mishaal Tamer"
+#         },
+#         {
+#             "url": "https://youtube.com/shorts/kCYew_fPfnc",
+#             "description": "Tom Gregory - Never Let me Down"
+#         },
+#         # Add more videos with their URLs and descriptions here
+#     ]
 
-    for i, video_info in enumerate(video_data):
-        st.write(f"Video {i + 1}")
-        st.write(f"Description: {video_info['description']}")
-        st.write("YouTube Video:")
-        video_url = video_info['url']
-        video_id = extract_video_id(video_url)
-        YouTubeVideo(video_id)
+#     for i, video_info in enumerate(video_data):
+#         st.write(f"Video {i + 1}")
+#         st.write(f"Description: {video_info['description']}")
+#         st.write("YouTube Video:")
+#         video_url = video_info['url']
+#         video_id = extract_video_id(video_url)
+#         YouTubeVideo(video_id)
 
 
-def extract_video_id(video_url):
-    # Extract the video ID from the YouTube URL
-    video_id = None
-    if "youtube.com/watch" in video_url or "youtu.be/" in video_url:
-        if "youtube.com/watch" in video_url:
-            video_id = video_url.split("v=")[1]
-        else:
-            video_id = video_url.split("/")[-1]
-        video_id = video_id.split("&")[0]
-    else:
-        raise ValueError("Invalid YouTube URL")
-    return video_id
+# def extract_video_id(video_url):
+#     # Extract the video ID from the YouTube URL
+#     video_id = None
+#     if "youtube.com/watch" in video_url or "youtu.be/" in video_url:
+#         if "youtube.com/watch" in video_url:
+#             video_id = video_url.split("v=")[1]
+#         else:
+#             video_id = video_url.split("/")[-1]
+#         video_id = video_id.split("&")[0]
+#     else:
+#         raise ValueError("Invalid YouTube URL")
+#     return video_id
 
 
 if __name__ == "__main__":
