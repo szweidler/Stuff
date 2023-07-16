@@ -9,10 +9,11 @@ def main():
 
     # st.title("")
 
-    st.markdown(f"<h1 style='color:{title_color};'>{emoji} {title}</h1>", unsafe_allow_html=True)
+    st.markdown(f"<h1 style='color:{title_color}; text-align:center;'>{emoji} {title}</h1>", unsafe_allow_html=True)
+
 
     # st.subheader("Subtitle:")
-    st.markdown(f"<h2 style='color:{subtitle_color};'>{subtitle}</h2>", unsafe_allow_html=True)
+    st.markdown(f"<h2 style='color:{subtitle_color}; text-align:center;'>{subtitle}</h2>", unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
