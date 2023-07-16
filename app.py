@@ -4,7 +4,7 @@ import requests
 from PIL import Image
 from io import BytesIO
 
-from IPython.display import YouTubeVideo
+# from IPython.display import YouTubeVideo
 
 def main():
     title = "Vielen Herzlichen Dank!"
@@ -30,15 +30,16 @@ def main():
     st.image(image_url1, caption="One Republic", use_column_width=True)
     # st.video(video_url1)
     # st.text("")
-    youtube_url1 = "https://youtube.com/shorts/3MZHcmfJTqE"
+    # youtube_url1 = "https://youtube.com/shorts/3MZHcmfJTqE"
 
-    st.write("YouTube Video:")
-    st.video(youtube_url1)
+    st.write("Mishaal Tamer:\n", youtube_url1)
+    st.markdown("[Mishaal Tamer](https://youtube.com/shorts/3MZHcmfJTqE)")
+    # st.video(youtube_url1)
 
 
-    youtube_url2 =  "https://youtube.com/shorts/kCYew_fPfnc"
-    st.write("Tom Gregory:")
-    st.video(youtube_url2)
+    # youtube_url2 =  "https://youtube.com/shorts/kCYew_fPfnc"
+    # st.write("Tom Gregory:")
+    # st.video(youtube_url2)
     
    
 
