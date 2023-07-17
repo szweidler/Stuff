@@ -4,11 +4,11 @@ import requests
 from PIL import Image
 from io import BytesIO
 
-"""
-the idea of this project is to create a webpage where one can see the visual impressions of moon and stars festival 23 in Locarno.
-the site can be found under: https://moonnstars23.streamlit.app/
-to make changes on the webiste, make changes in this file, push ut to git and run 'streamlit run app.py' in the command line
-"""
+# """
+# the idea of this project is to create a webpage where one can see the visual impressions of moon and stars festival 23 in Locarno.
+# the site can be found under: https://moonnstars23.streamlit.app/
+# to make changes on the webiste, make changes in this file, push ut to git and run 'streamlit run app.py' in the command line
+# """
 def main():
     custom_css = """
         <style>
