@@ -17,11 +17,13 @@ def main():
     st.markdown(custom_css, unsafe_allow_html=True)
 
     title = "Vielen Herzlichen Dank!"
-    subtitle = "Moon&Stars Locarno 2023"
+    subtitle = "&#127769;" + "Moon&Stars Locarno 2023" + "&#127776;"
     emoji = "&#10024;"
     title_color = "#000000"  # Black color
     subtitle_color = "purple"#9c72a9"  # Hex color code for #9c72a9
-
+    # another star: 9734
+    # shooting star: &#127776;
+    # moon: &#127769;
     # st.title("")
 
     st.markdown(f"<h1 style='color:{title_color}; text-align:center;'>{emoji} {title} {emoji}</h1>", unsafe_allow_html=True)
