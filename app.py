@@ -16,27 +16,32 @@ def main():
     # st.title("")
 
     st.markdown(f"<h1 style='color:{title_color}; text-align:center;'>{emoji} {title} {emoji}</h1>", unsafe_allow_html=True)
-
+    image_url1 = "https://raw.githubusercontent.com/szweidler/Stuff/main/photos/mns.jpg"
+    st.image(image_url1, use_column_width = True)
 
     # st.subheader("Subtitle:")
     st.markdown(f"<h2 style='color:{subtitle_color}; text-align:center;'>{subtitle}</h2>", unsafe_allow_html=True)
     
-    # Fetch the image from GitHub
     # in order that the pictures and videos are shown the repository has to be public
-    image_url1 = "https://raw.githubusercontent.com/szweidler/Stuff/main/photos/TitlePic.jpg"
+    image_url2 = "https://raw.githubusercontent.com/szweidler/Stuff/main/photos/TitlePic.jpg"
     # video_url1 = "https://raw.githubusercontent.com/szweidler/Stuff/main/photos/IMG_1815.MOV"
 
 
-    st.image(image_url1, caption="One Republic", use_column_width=True)
-    # st.video(video_url1)
-    # st.text("")
-    # youtube_url1 = "https://youtube.com/shorts/3MZHcmfJTqE"
+    st.image(image_url2, caption="Ryan Tedder (15.7.23)", use_column_width=True)
 
-    # st.write("Mishaal Tamer:\n", youtube_url1)
+    st.write('Some impressions of Saturday night at Moon and Stars festival 2023')
+    # Hyperlink with markdown
     st.markdown("[Mishaal Tamer](https://youtube.com/shorts/3MZHcmfJTqE?feature=share)")
     # st.video(youtube_url1)
+    st.markdown("[Tom Gregory](https://youtube.com/shorts/kCYew_fPfnc?feature=share)")
 
+    st.markdown("[One Republic, I ain't worried ](https://youtube.com/shorts/LnqMYc8MFVA?feature=share)")
 
+    st.markdown("[One Republic, thats what i want](https://youtube.com/shorts/KSf4IjgxLUU?feature=share)")
+
+    # st.markdown("[One Republic, Halo]()")
+
+    st.markdown("[One Republic, Secrets](https://youtu.be/kOjtYCvmWbo)")
     # youtube_url2 =  "https://youtube.com/shorts/kCYew_fPfnc"
     # st.write("Tom Gregory:")
     # st.video(youtube_url2)
