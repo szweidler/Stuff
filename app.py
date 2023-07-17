@@ -30,7 +30,7 @@ def main():
     st.image(image_url2, caption="Ryan Tedder (15.7.23)", use_column_width=True)
 
     # st.write('Some impressions of Saturday night at Moon and Stars festival 2023 ()')
-    st.markdown('<p style="text-align: center; font-size: 16px;">Some impressions of Saturday night at Moon and Stars festival 2023</p>', unsafe_allow_html=True)
+    st.markdown('<p style="text-align: center; font-size: 20px;">Some impressions of Saturday night at Moon and Stars festival 2023</p>', unsafe_allow_html=True)
     # Hyperlink with markdown
     st.markdown("[Mishaal Tamer](https://youtube.com/shorts/3MZHcmfJTqE?feature=share)")
     # st.video(youtube_url1)
