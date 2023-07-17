@@ -7,6 +7,15 @@ from io import BytesIO
 # from IPython.display import YouTubeVideo
 
 def main():
+    custom_css = """
+        <style>
+            body {
+                background-color: #A17BA2; /* Replace this with the desired background color */
+            }
+        </style>
+    """
+    st.markdown(custom_css, unsafe_allow_html=True)
+
     title = "Vielen Herzlichen Dank!"
     subtitle = "Moon&Stars Locarno 2023"
     emoji = "&#10024;"
