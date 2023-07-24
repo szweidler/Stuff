@@ -1,8 +1,8 @@
-import streamlit as st
-
 import requests
 from PIL import Image
 from io import BytesIO
+
+import streamlit as st
 
 # """
 # the idea of this project is to create a webpage where one can see the visual impressions of moon and stars festival 23 in Locarno.
